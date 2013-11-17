@@ -1,0 +1,219 @@
+/*==== VARIABLES ===*/
+
+orange = #e78814
+coffee = #473023
+blue = #104e83
+container = 1024px
+vendor-prefixes = o ms moz webkit
+cafe-clarito = #fcf3e1
+borde-cafe = #bc9486
+
+/*==== GENERAL STLYES ===*/
+
+a,
+a:hover
+	text-decoration none
+
+body
+	background url('img/fondo.jpg') center top no-repeat
+	color coffee
+	font-family 'Lato', sans-serif
+	font-size 1em
+	line-height 23px
+
+/*==== NAVIGATION ===*/
+
+header 
+	margin 0 auto
+	width container	
+
+nav 
+	background url("img/barra-menu.png") center top no-repeat
+	height 83px
+	margin 105px auto 0
+	position relative
+	width: 945px;
+	ul
+		height 55px
+		padding 0 20px 0 35px
+		margin 10px 0 0
+		li
+			display inline-block		
+			a
+				color white
+				display inline-block
+				font-family 'Oswald', sans-serif			
+				font-size 14px
+				font-weight 700			
+				line-height 55px
+				margin-right: 26px
+				text-transform uppercase
+				transition all 0.2s ease-out
+				position relative
+				-webkit-transition 0.2s all ease-out
+			a:hover
+				color orange
+				top -1px
+				border-bottom 3px solid white
+	figure.logo
+		margin-left -117px
+		left 50%			
+		position absolute
+		top -90px		
+		width 221px
+
+/*==== INTRO ===*/
+
+.intro
+	margin 50px 0 0 0
+	position relative
+	.rag-illustration
+		position relative
+		left -30px
+	.registration-module
+		position absolute
+		right 0
+		top 0
+		.steps
+			position relative
+			width 333px
+			.poring-clouds
+				position absolute
+				left: -70px
+				top: -56px
+				z-index: 1
+			.wood-add
+				position absolute
+				left: 32px
+				top: -163px
+			.transparent-border
+				background-color: rgba(255,246,232,0);
+				border-radius 3px
+				-webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.53), inset 0 0 16px rgba(255,255,255,.45);
+				-moz-box-shadow: 0 0 8px 1px rgba(0,0,0,.53), inset 0 0 16px rgba(255,255,255,.45);
+				box-shadow: 0 0 8px 1px rgba(0,0,0,.53), inset 0 0 16px rgba(255,255,255,.45);
+				margin 131px 0 0 0
+				padding 10px 0
+		.indications
+				background cafe-clarito
+				border 7px solid #bc9486
+				border-radius 3px
+				margin 0 auto
+				padding 29px 10px 10px	
+				position relative
+				width 321px	
+				.last-cloud
+					position absolute
+					right: -33px
+					bottom: -38px
+						
+				.single-step
+					border-bottom 1px dotted coffee		
+					margin 0 0 10px
+					.step-image
+						float left
+					.step-text
+						float left
+						margin 10px 0 0 10px
+						padding 0 0 10px 0
+						h2
+							font-family 'Oswald', sans-serif
+							font-size 30px						
+							font-weight 700
+							margin 0
+							padding 0
+							text-transform uppercase
+							letter-spacing 1px
+							a
+								background url('img/arrow-right.png') left center no-repeat								
+								color coffee
+								padding-left 10px
+								transition all 0.1s ease-out
+								-webkit-transition 0.1s all ease-out
+								background-size: 7px
+							a:hover 
+								color orange
+								padding-left 15px
+								background url('img/arrow-right.png') left center no-repeat
+								background-size: 10px
+							
+						p
+							font-size 11px
+							margin 0
+							padding 0
+							text-transform uppercase
+				.single-step:last-child
+					border-bottom: none;
+
+/*==== MAIN CONTENT ===*/
+
+.main-content
+	width container
+	margin 0 auto
+	position: relative;
+	top: -5px;	
+	.transparent-border
+		background-color: rgba(255,246,232,0);
+		border-radius 3px
+		-webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.53), inset 0 0 16px rgba(255,255,255,.45);
+		-moz-box-shadow: 0 0 8px 1px rgba(0,0,0,.53), inset 0 0 16px rgba(255,255,255,.45);
+		box-shadow: 0 0 8px 1px rgba(0,0,0,.53), inset 0 0 16px rgba(255,255,255,.45);
+		padding 5px
+		margin 0 0 44px 0		
+	.module
+		background cafe-clarito
+		border 4px solid borde-cafe
+		border-radius 3px
+		position relative
+		.foot-image
+			position relative
+			bottom -23px
+			left -10px
+
+	h2.module-title.orange
+		margin 0
+		padding 7px
+		background orange
+		color #fff
+		font-family 'Oswald', sans-serif		
+		font-weight 700
+		font-size 24px
+	h2.module-title.blue			
+		margin 0
+		padding 7px
+		background blue
+		color #fff
+		font-family 'Oswald', sans-serif		
+		font-weight 700
+		font-size 24px		
+	.left-column
+		float left
+		margin-right 19px
+		width 199px
+		ul
+			list-style none
+			padding 0 0 0 10px
+			li
+				border-bottom 1px dotted coffee
+				padding 8px 0
+				a
+					color coffee
+					font-size 12px
+					font-family 'Oswald', sans-serif		
+					font-weight 700					
+					text-transform uppercase
+					transition all 0.2s ease-out
+					display block
+					padding 0 0 0 9px
+					background url('img/arrow-right.png') left center no-repeat													
+					background-size: 4px
+					transition all 0.2 ease-out
+				a:hover
+					color orange
+					margin-left 5px
+	.main-column
+		float left
+		width 590px
+	.right-column
+		float right
+		width 199px
